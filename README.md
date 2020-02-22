@@ -17,7 +17,10 @@ El servidor no procesará la solicitud, porque no puede, o no debe, debido a alg
 
 5xx: Errores de servidor
 
-Post
-El método POST se utiliza para solicitar que el servidor de origen acepte el
-entidad incluida en la solicitud como un nuevo subordinado del recurso
-identificado por el URI de solicitud en la línea de solicitud
+## GET
+- El método GET significa recuperar cualquier información (en forma de
+   entidad) se identifica mediante el URI de solicitud. Si el URI de solicitud hace referencia
+   para un proceso de producción de datos, son los datos producidos los que serán
+   devuelto como la entidad en la respuesta y no el texto fuente del
+   proceso, a menos que ese texto sea el resultado del proceso.
+
