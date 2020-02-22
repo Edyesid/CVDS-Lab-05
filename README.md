@@ -16,3 +16,8 @@ El servidor no procesará la solicitud, porque no puede, o no debe, debido a alg
 4xx: Errores del cliente
 
 5xx: Errores de servidor
+
+Post
+El método POST se utiliza para solicitar que el servidor de origen acepte el
+entidad incluida en la solicitud como un nuevo subordinado del recurso
+identificado por el URI de solicitud en la línea de solicitud
