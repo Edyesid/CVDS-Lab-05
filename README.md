@@ -8,7 +8,11 @@ El servidor no procesará la solicitud, porque no puede, o no debe, debido a alg
 ¿Qué otros códigos de error existen?, ¿En qué caso se manejarán?
 
 1xx: Respuestas informativas
+
 2xx: Peticiones correctas
+
 3xx: Redirecciones
+
 4xx: Errores del cliente
+
 5xx: Errores de servidor
