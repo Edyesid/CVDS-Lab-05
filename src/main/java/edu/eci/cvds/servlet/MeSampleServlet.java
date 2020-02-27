@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import edu.eci.cvds.servlet.model.Todo;
 
 @WebServlet(
-    urlPatterns = "/holaServlet"
+    urlPatterns = "/MeSampleServlet"
 )
 
 public class MeSampleServlet extends HttpServlet {
@@ -27,7 +27,7 @@ public class MeSampleServlet extends HttpServlet {
     	
         Writer responseWriter = resp.getWriter();
         try {
-            Optional<String> optId = Optional.ofNullable(req.getParameter("id"));
+            Optional<String> optId = Optional.ofNullable(req.getParameter("entrada"));
             Integer id = (Integer.parseInt(optId.get()));
             Todo lista = Service.getTodo(id);           
             ArrayList<Todo> listaDeToDos = new ArrayList<Todo>();
@@ -38,7 +38,7 @@ public class MeSampleServlet extends HttpServlet {
         }
         //Id invalido (Se paso un String o no hubo valor)
         catch ( NumberFormatException e){
-            responseWriter.write("Requerimiento Inválido");
+            responseWriter.write("Requerimiento Inválido1");
         }
         //Id No encontrado
         catch (FileNotFoundException e){
@@ -54,7 +54,7 @@ public class MeSampleServlet extends HttpServlet {
         }
         //otros Errores
         catch (Exception e){
-            responseWriter.write("Requerimiento Invalido");
+            responseWriter.write("Requerimiento Invalidoputo2");
         }  
    }
     
@@ -63,7 +63,7 @@ public class MeSampleServlet extends HttpServlet {
     	
         Writer responseWriter = resp.getWriter();
         try {
-            Optional<String> optId = Optional.ofNullable(req.getParameter("id"));
+            Optional<String> optId = Optional.ofNullable(req.getParameter("entrada"));
             Integer id = (Integer.parseInt(optId.get()));
             Todo lista = Service.getTodo(id);           
             ArrayList<Todo> listaDeToDos = new ArrayList<Todo>();
@@ -74,7 +74,7 @@ public class MeSampleServlet extends HttpServlet {
         }
         //Id invalido (Se paso un String o no hubo valor)
         catch ( NumberFormatException e){
-            responseWriter.write("Requerimiento Inválido");
+            responseWriter.write("Requerimiento Inválido3");
         }
         //Id No encontrado
         catch (FileNotFoundException e){
@@ -90,7 +90,7 @@ public class MeSampleServlet extends HttpServlet {
         }
         //otros Errores
         catch (Exception e){
-            responseWriter.write("Requerimiento Invalido");
+            responseWriter.write("Requerimiento Invalido4");
         }  
    }
     
