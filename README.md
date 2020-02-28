@@ -1,4 +1,25 @@
 # Laboratorio 5
+
+
+## Integrantes
+- Edwin Yesid Maldonado Rodriguez
+- Henry Alejandro Sanchez Arevalo
+
+## Capturas
+
+# Ingresando no numero
+![Sin para](https://i.ibb.co/LS3n3T3/Parametro-No-Numero.jpg)
+# Mostrando Tabla
+![Sin para](https://i.ibb.co/zxrvQgr/Tabla.jpg)
+# Jugando
+![Sin para](https://i.ibb.co/Hh19qYt/Jugando.jpg)
+# Jugando de a dos
+![Sin para](https://i.ibb.co/sJ16Bf7/Jugando-en-dos.jpg)
+# Hackeando xD
+![Sin para](https://i.ibb.co/2MR78Df/hackeando.jpg)
+# Actualizando
+![Sin para](https://i.ibb.co/0VnkS5v/actualizando.jpg)
+
  
 Revise el resultado obtenido. ¿Qué codigo de error sale?, revise el significado del mismo en la lista de códigos de estado HTTP.
 
