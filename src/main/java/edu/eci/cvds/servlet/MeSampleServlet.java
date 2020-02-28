@@ -18,7 +18,7 @@ import edu.eci.cvds.servlet.model.Todo;
     urlPatterns = "/MeSampleServlet"
 )
 
-public class MeSampleServlet extends HttpServlet {
+public class MeSampleServlet extends HttpServlet{
 	
    static final long serialVersionUID = 35L;
 
@@ -42,7 +42,7 @@ public class MeSampleServlet extends HttpServlet {
         }
         //Id No encontrado
         catch (FileNotFoundException e){
-            responseWriter.write(tablaVacia() + "\n");
+            responseWriter.write(Vacio() + "\n");
             responseWriter.write("No encontrado.");
             
             
@@ -78,7 +78,7 @@ public class MeSampleServlet extends HttpServlet {
         }
         //Id No encontrado
         catch (FileNotFoundException e){
-            responseWriter.write(tablaVacia() + "\n");
+            responseWriter.write(Vacio() + "\n");
             responseWriter.write("No encontrado.");
             
             
@@ -94,7 +94,7 @@ public class MeSampleServlet extends HttpServlet {
         }  
    }
     
-    private String tablaVacia(){
+    public String Vacio(){
         StringBuilder stringBuilder = new StringBuilder("<table>")
         .append("<tr>")
         .append("<th>User Id</th>")
