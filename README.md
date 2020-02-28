@@ -6,7 +6,7 @@
 - Henry Alejandro Sanchez Arevalo
 
 ## Capturas
-
+![Sin para]()
 # Ingresando no numero
 ![Sin para](https://i.ibb.co/LS3n3T3/Parametro-No-Numero.jpg)
 # Mostrando Tabla
