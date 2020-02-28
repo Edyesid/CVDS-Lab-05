@@ -11,6 +11,7 @@ import org.primefaces.PrimeFaces;
 @ManagedBean(name = "guessBean")
 @SessionScoped
 public class BackingBean {
+	private int intent;
 	private int numeroAdivinar;
 	private int intentos;
 	private int premioAcumulado;
@@ -26,15 +27,17 @@ public class BackingBean {
 	}
 	
 	public void guess(int intento) {
-		
-		if(intento == numeroAdivinar && intentos==0) {
+		intento=intent;
+		if(intent == numeroAdivinar && intentos==0) {
 			estado = "Acerto";
-		} else if (intento != numeroAdivinar) {
+		} else if (intent != numeroAdivinar) {
 			estado = "all right";
+			numerosUsados.add(intent);
 			intentos++;
-		}else if (intento == numeroAdivinar && intentos>=1) {
-			estado = "all right";
-			premioAcumulado = premioAcumulado - (10000*intentos);
+			premioAcumulado = premioAcumulado - (10000);
+		}else if (intent == numeroAdivinar && intentos>=1) {
+			estado = "Acertado";
+			
 		}
 		if (premioAcumulado < 0) {
 			premioAcumulado = 0;
@@ -47,8 +50,25 @@ public class BackingBean {
 		premioAcumulado = 100000;
 		intentos = 0;
 		estado="Are you Ready?";
+		numerosUsados = new ArrayList<Integer>();
 	}
 	
+
+	public int getIntent() {
+		return intent;
+	}
+
+	public void setIntent(int intent) {
+		this.intent = intent;
+	}
+
+	public ArrayList<Integer> getNumerosUsados() {
+		return numerosUsados;
+	}
+
+	public void setNumerosUsados(ArrayList<Integer> numerosUsados) {
+		this.numerosUsados = numerosUsados;
+	}
 
 	public int getNumeroAdivinar() {
 		return numeroAdivinar;
