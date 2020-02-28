@@ -1,5 +1,7 @@
-/target/
-*.settings
-*.classpath
-*.DS_Store
-*.project
+#Maven
+/target
+
+#Eclipse
+/.settings
+.classpath
+.project
