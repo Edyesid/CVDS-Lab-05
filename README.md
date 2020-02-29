@@ -85,6 +85,10 @@ El método PATCH  es utilizado para aplicar modificaciones parciales a un recurs
 ### Actualizando
 ![Sin para](https://i.ibb.co/0VnkS5v/actualizando.jpg)
 
+## Diagramas de clase
+![Sin para](https://i.ibb.co/yhT1F1b/Captura.png)
+
+![Sin para](https://i.ibb.co/gzbZCfB/Captura1.png)
 
 Bibliografia
 
