@@ -89,5 +89,7 @@ El método PATCH  es utilizado para aplicar modificaciones parciales a un recurs
 Bibliografia
 
 https://developer.mozilla.org/es/docs/Web/HTTP/Methods
+https://developer.mozilla.org/es/docs/Web/HTML/Elemento/input/Bot%C3%B3n
+
 
 
